@@ -1,1 +1,74 @@
-// Specific CSS for your home-page
+body {
+    background-color: black;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.grain:after {
+    content: "";
+    background-image: url("https://res.cloudinary.com/ddzvfukq6/image/upload/v1726292692/2964b6c6-f353-4ea6-a5e9-09eab6fe3b23.png");
+    height: 300%;
+    width: 300%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.075;
+    animation: animateGrain 16s steps(10) infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes animateGrain {
+    0%, 100% { transform: translate(0, 0); }
+    10% { transform: translate(-5%, -10%); }
+    20% { transform: translate(-15%, -20%); }
+    30% { transform: translate(-5%, -10%); }
+    40% { transform: translate(-15%, -20%); }
+    50% { transform: translate(-5%, -10%); }
+    60% { transform: translate(-15%, -20%); }
+    70% { transform: translate(-5%, -10%); }
+    80% { transform: translate(-15%, -20%); }
+    90% { transform: translate(-5%, -10%); }
+    100% { transform: translate(-15%, -20%); }
+}
+.roboto {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bruno {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.chakra {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.chakra-light {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.dark-gray {
+    color: $dark-gray
+}
+.gray {
+    color: $gray;
+}
+.light-gray {
+    color: $light-gray;
+}
