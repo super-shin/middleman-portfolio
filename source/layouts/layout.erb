@@ -5,8 +5,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Portfolio" %></title>
+    <title><%= current_page.data.title || "Shingie Taira" %></title>
+    <meta name="description" content="Description of my portfolio site">
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="Shingie Taira" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="www.shingietaira.com" />
+    <meta property="og:image" content="<%= image_path 'placeholder.png' %>" />
+    <meta property="og:description" content="Discover Shingie Taira's innovative web development expertise and cutting-edge projects, showcasing a passion for creating impactful digital experiences." />
+    <meta property="og:site_name" content="SHINGIE TAIRA | PORTFOLIO" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
