@@ -1,21 +1,20 @@
 .banner {
   min-height: 90vh;
-  position: relative; /* Relative positioning for the container */
+  position: relative;
 }
 
 .pic-bg {
   z-index: -1;
   position: absolute;
-  left: 50%; /* Move the element to the center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  height: 800px; /* Limit the height */
-  width: 800px; /* Adjust width automatically to maintain aspect ratio */
+  left: 50%;
+  transform: translateX(-50%);
+  height: 800px;
+  width: 800px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 1) 100%), 
     url('https://res.cloudinary.com/ddzvfukq6/image/upload/v1726309880/shinprofile_cra1an.png');
   background-size: cover;
   background-position: center;
 }
-
 
 .title-one {
   font-family: "Figtree", sans-serif;
@@ -40,15 +39,15 @@
 
 .chevron {
   position: relative;
-  display: inline-block; /* Ensure chevron is centered with text */
-  width: 16px; /* Increase width for better spacing */
-  height: 10px; /* Increase height for better spacing */
+  display: inline-block;
+  width: 16px;
+  height: 10px;
 }
 
 .chev {
   position: absolute;
-  width: 12px; /* Adjust width for chevron size */
-  height: 4px; /* Adjust height for chevron size */
+  width: 12px;
+  height: 4px;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
   animation: move 3s ease-out infinite;
@@ -104,24 +103,25 @@
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
+
 .pulsating-wrapper {
   display: inline-block;
   position: relative;
-  margin-left: 5px; /* Adjust margin to ensure spacing */
+  margin-left: 5px;
 }
 
 .pulsating-circle {
   width: 10px;
   height: 10px;
   position: relative;
-  display: inline-block; /* Ensures it's inline with the text */
+  display: inline-block;
 }
 
 .pulsating-circle:before {
   content: '';
   position: absolute;
-  top: 50%; /* Start at the vertical center of the parent */
-  left: 50%; /* Start at the horizontal center of the parent */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   display: block;
   width: 150%;
@@ -167,20 +167,20 @@
 
 .line-wrapper {
   position: relative;
-  overflow: hidden; /* Clip the moving line outside this container */
+  overflow: hidden;
 }
 
 .moving-line {
   position: absolute;
-  top: 50%; /* Vertically center the line */
-  left: 0; /* Start the line off-screen */
-  width: 100px; /* Length of the moving line */
-  height: 0.8px; /* Height of the line */
+  top: 50%;
+  left: 0;
+  width: 100px;
+  height: 0.8px;
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0) 0%,  /* Transparent on the left */
-    rgba(255, 255, 255, 0.8) 50%, /* Bright white in the middle */
-    rgba(255, 255, 255, 0) 100%   /* Transparent on the right */
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100% 
   );
   opacity: 0.25;
   animation: moveLine 6s infinite alternate ease-in-out;
@@ -188,9 +188,9 @@
 
 @keyframes moveLine {
   0% {
-    transform: translateX(-50vw); /* Start from the left of the wrapper */
+    transform: translateX(-50vw);
   }
   100% {
-    transform: translateX(100vw); /* Move across to the right of the wrapper */
+    transform: translateX(100vw);
   }
 }
