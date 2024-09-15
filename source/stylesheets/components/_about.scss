@@ -1,0 +1,77 @@
+#about {
+    min-height: 100vh;
+    background-color: transparent;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+}
+
+#japanese {
+    background: linear-gradient(to right, white 33%, red 33% 66%, white 66%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    transition: color 1s ease;
+}
+
+#japanese:hover {
+    cursor: pointer;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+#philippines {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/2560px-Flag_of_the_Philippines.svg.png');
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color 1s ease;
+}
+
+#philippines:hover {
+    cursor: pointer;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.flipper {
+    transition: color 0.3s;
+}
+
+.flipper {
+    perspective: 1000px;
+
+    span {
+        position: relative;
+        display: inline-block;
+        padding: 0;    
+        transition: transform 0.3s;
+        transform-origin: 50% 0;
+        transform-style: preserve-3d;
+    }
+
+    span:before {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: attr(data-hover);
+        transition: color 0.3s;
+        transform: rotateX(-90deg);
+        transform-origin: 50% 0;
+        text-align: center;
+    }
+
+    &:hover span,
+    &:focus span {
+        transform: rotateX(90deg) translateY(-22px);
+    }
+
+    &:hover span:before,
+    &:focus span:before {
+        color: $yellow;
+    }
+}
