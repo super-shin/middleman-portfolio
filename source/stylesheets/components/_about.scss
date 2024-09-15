@@ -105,12 +105,86 @@
     transition: filter 0.5s ease;
 }
 
-.bentos {
-    transition: filter 0.5s ease;
-    filter: grayscale(100%);
+.bg-transparent-blue img {
+    transition: transform 1s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
 }
 
-.bentos:hover {
-    filter: grayscale(0%);
+.bg-transparent-blue:hover img {
+    transform: scale(1.25);
+}
+
+.bg-transparent-gray {
+    background-image: linear-gradient(
+    0deg,
+    hsl(0deg, 0%, 0%) 0%,
+    hsl(343deg, 0%, 6%) 0%,
+    hsl(343deg, 0%, 10%) 0%,
+    hsl(344deg, 0%, 14%) -1%,
+    hsl(344deg, 0%, 17%) -1%,
+    hsl(344deg, 0%, 21%) -1%,
+    hsl(344deg, 0%, 25%) -1%,
+    hsl(344deg, 0%, 29%) -1%,
+    hsl(344deg, 0%, 34%) -2%,
+    hsl(344deg, 0%, 38%) -2%,
+    hsl(344deg, 0%, 42%) -2%,
+    hsl(344deg, 0%, 47%) -1%,
+    hsl(344deg, 0%, 51%) -1%,
+    hsl(344deg, 0%, 56%) 0%,
+    hsl(344deg, 0%, 60%) 3%,
+    hsl(344deg, 0%, 65%) 13%,
+    hsl(344deg, 0%, 70%) 35%,
+    hsl(344deg, 0%, 75%) 50%,
+    hsl(344deg, 0%, 80%) 63%,
+    hsl(344deg, 0%, 85%) 73%,
+    hsl(344deg, 0%, 90%) 83%,
+    hsl(344deg, 0%, 95%) 92%,
+    hsl(0deg, 0%, 100%) 100%
+  );
+    transition: filter 0.5s ease;
+}
+
+.bg-transparent-gray img {
+    transition: transform 1s ease;
+}
+
+.bg-transparent-gray:hover img {
+    transform: scale(1.25);
+}
+
+.lumos {
+    position: relative;
+    overflow: hidden;
+}
+
+.static-img {
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.animated-img {
+    height: 100%;
+    opacity: 0;
+}
+
+.lumos:hover .static-img {
+    opacity: 0;
+}
+
+.lumos:hover .animated-img {
+    opacity: 1;
+}
+
+.bento-card {
+    transition: filter 0.5s ease;
+}
+
+.bento-card:hover {
     cursor: pointer;
+}
+
+.bentos {
+    transition: filter 0.5s ease;
 }
