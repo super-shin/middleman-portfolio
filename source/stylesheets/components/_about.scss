@@ -75,3 +75,42 @@
         color: $yellow;
     }
 }
+
+.bg-transparent-black {
+    background-color: rgba(0, 0, 0, 0.574);
+}
+
+.bg-transparent-blue {
+    background-image: linear-gradient(
+        135deg,
+        hsl(223deg, 100%, 24%) 0%,
+        hsl(225deg, 95%, 27%) 6%,
+        hsl(229deg, 84%, 33%) 12%,
+        hsl(235deg, 74%, 38%) 19%,
+        hsl(240deg, 66%, 44%) 27%,
+        hsl(246deg, 69%, 47%) 36%,
+        hsl(252deg, 73%, 49%) 47%,
+        hsl(257deg, 82%, 51%) 61%,
+    hsl(262deg, 94%, 51%) 75%,
+    hsl(264deg, 100%, 57%) 85%,
+    hsl(264deg, 100%, 63%) 91%,
+    hsl(265deg, 99%, 68%) 94%,
+    hsl(266deg, 98%, 73%) 97%,
+    hsl(267deg, 95%, 78%) 98%,
+    hsl(268deg, 91%, 82%) 99%,
+    hsl(269deg, 83%, 86%) 100%,
+    hsl(269deg, 67%, 90%) 100%,
+    hsl(270deg, 27%, 94%) 100%
+    );
+    transition: filter 0.5s ease;
+}
+
+.bentos {
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+}
+
+.bentos:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
