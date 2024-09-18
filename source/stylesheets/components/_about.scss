@@ -158,7 +158,6 @@
 }
 
 .static-img {
-    height: 100%;
     position: absolute;
     transition: opacity 0.5s ease;
     opacity: 1;
@@ -177,6 +176,10 @@
     opacity: 1;
 }
 
+.bentos {
+    transition: filter 0.5s ease;
+}
+
 .bento-card {
     transition: filter 0.5s ease;
 }
@@ -185,6 +188,28 @@
     cursor: pointer;
 }
 
-.bentos {
-    transition: filter 0.5s ease;
+.bunpofy {
+    position: relative;
+    overflow: hidden;
+}
+
+.bunpofy:hover .static-img {
+    opacity: 0;
+}
+
+.bunpofy:hover .animated-img {
+    opacity: 1;
+}
+
+.fantasy-fleet {
+    position: relative;
+    overflow: hidden;
+}
+
+.fantasy-fleet:hover .static-img {
+    opacity: 0;
+}
+
+.fantasy-fleet:hover .animated-img {
+    opacity: 1;
 }
