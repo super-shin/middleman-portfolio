@@ -10,34 +10,60 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var lumosElement = document.querySelector('.lumos');
-            var bentoCards = document.querySelectorAll('.bento-card');
-            function setAllCardsGrayscale() {
-                bentoCards.forEach(function(card) {
-                    card.style.filter = 'grayscale(100%)';
-                });
-            }
-            setAllCardsGrayscale();
-            if (lumosElement) {
-                lumosElement.addEventListener('mouseenter', function() {
-                    bentoCards.forEach(function(card) {
-                        card.style.filter = 'grayscale(0%)';
-                    });
-                });
-                lumosElement.addEventListener('mouseleave', function() {
-                    setAllCardsGrayscale();
-                });
-            }
+    var bentoCards = document.querySelectorAll('.bento-card');
+    function setAllCardsGrayscale() {
+        bentoCards.forEach(function(card) {
+            card.style.filter = 'grayscale(100%)';
+        });
+    }
+    setAllCardsGrayscale();
+    if (lumosElement) {
+        lumosElement.addEventListener('mouseenter', function() {
             bentoCards.forEach(function(card) {
-                card.addEventListener('mouseenter', function() {
-                    card.style.filter = 'grayscale(0%)';
-                });
-                card.addEventListener('mouseleave', function() {
-                    if (!card.classList.contains('lumos')) {
-                        card.style.filter = 'grayscale(100%)';
-                    }
-                });
+                card.style.filter = 'grayscale(0%)';
             });
+        });
+        lumosElement.addEventListener('mouseleave', function() {
+            setAllCardsGrayscale();
+        });
+    }
+    bentoCards.forEach(function(card) {
+        card.addEventListener('mouseenter', function() {
+            card.style.filter = 'grayscale(0%)';
+        });
+        card.addEventListener('mouseleave', function() {
+            if (!card.classList.contains('lumos')) {
+                card.style.filter = 'grayscale(100%)';
+            }
+        });
+    });
+    bentoCards.forEach(function(card) {
+        card.addEventListener('mouseenter', function() {
+            card.style.filter = 'grayscale(0%)';
+            const animatedImg = card.querySelector('.animated-img');
+            const imgSrc = animatedImg.src;
+            animatedImg.src = ''; // Reset the GIF
+            animatedImg.src = imgSrc; // Re-assign to restart it
+        });
+        card.addEventListener('mouseleave', function() {
+            if (!card.classList.contains('lumos')) {
+                card.style.filter = 'grayscale(100%)';
+            }
+        });
+    });
+
+    document.querySelectorAll('.mockup').forEach(mockup => {
+        const gif = mockup.querySelector('.animated-mockup');
+        const img = new Image();
+        img.src = gif.src;
+        mockup.addEventListener('mouseenter', () => {
+            gif.src = '';
+            gif.src = img.src;
+        });
+    }); 
 });
+
+
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('.scroll-section');
     const numberElement = document.querySelector('.number');
@@ -56,5 +82,5 @@ window.addEventListener('scroll', function() {
             }, 100);
         }
         }
-    });
+    });    
 });

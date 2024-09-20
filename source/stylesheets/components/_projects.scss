@@ -44,3 +44,36 @@
     background-color: $gray;
     color: black;
 }
+
+.mockup {
+    position: relative;
+    overflow: hidden;
+}
+
+.static-mockup, .animated-mockup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.static-mockup {
+    filter: grayscale(100%);
+    opacity: 1;
+}
+
+.animated-mockup {
+    opacity: 0;
+}
+
+.mockup:hover .static-mockup {
+    opacity: 0;
+}
+
+.mockup:hover .animated-mockup {
+    opacity: 1;
+}

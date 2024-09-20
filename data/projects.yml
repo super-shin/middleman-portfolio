@@ -1,13 +1,15 @@
 - name: bunpofy
   description: Education & Gaming
-  image: projects/placeholder.png
+  image: https://res.cloudinary.com/ddzvfukq6/image/upload/v1726822429/bunpofymockup_vs7z31.jpg
+  gif: projects/bunpofymockup.gif
   url: https://www.bunpofy.me
   github: https://github.com/super-shin/bunpofy
   online: true
 
 - name: Fantasy Fleet
   description: Car Rental & Marketplace
-  image: projects/placeholder.png
+  image: https://res.cloudinary.com/ddzvfukq6/image/upload/v1726822429/fantasyfleetmockup_eej8pa.jpg
+  gif: projects/fantasyfleetmockup.gif
   url: https://fantasy-fleet-2a6998e79800.herokuapp.com/
   github: https://github.com/pedrokogawa/fantasy-fleet
   online: true
