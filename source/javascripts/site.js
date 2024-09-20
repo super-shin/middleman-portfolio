@@ -38,3 +38,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
 });
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('.scroll-section');
+    const numberElement = document.querySelector('.number');
+    
+    sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        const halfWayPoint = window.innerHeight / 2;
+        
+        if (rect.top <= halfWayPoint && rect.bottom >= halfWayPoint) {
+        let newNumber = '0' + (index + 1) + '.';
+        if (numberElement.textContent !== newNumber) {
+            numberElement.textContent = newNumber;
+            numberElement.style.transform = 'translateY(0)';
+            setTimeout(() => {
+            numberElement.style.transform = 'translateY(0)';
+            }, 100);
+        }
+        }
+    });
+});
