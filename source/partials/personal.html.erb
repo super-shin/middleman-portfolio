@@ -1,9 +1,10 @@
 <div id="personal" class="my-4 container-fluid p-0">
-  <h1 class="figtree-bold mb-5" style="font-size: 7rem;">ABOUT <span class="shin bruno">ME</span> /</h1>
-  <div class="row m-0 g-3 w-100 border border-1 border-danger" style="height: 97vh;"><!--THREE COLUMN BENTO-->
-    <div class="col-4 d-flex flex-column g-3 align-items-center h-100 border border-1 border-warning"><!--FIRST COLUMN-->
-      <div class="card personal-card rounded-4" style="height: 240px;">
-        <span class="figtree" style="font-size: 20px;">Dynamic developer leveraging strong business insight to craft clean and creative designs that elevate brands, enhance user experiences, and drive measurable success for businesses.</span>
+  <h1 class="figtree-bold mb-5 font-1">ABOUT <span class="shin bruno">ME</span> /</h1>
+  <div class="row m-0 g-3 w-100 border border-1 border-danger" style="min-height: 97vh;">
+    <!--FIRST COLUMN-->
+    <div class="col-12 col-md-6 col-lg-4 d-flex g-3 align-items-center h-100 border border-1 border-warning">
+      <div class="card personal-card rounded-4 w-100" style="height: 240px;">
+        <span class="figtree font-4">Dynamic developer leveraging strong business insight to craft clean and creative designs that elevate brands, enhance user experiences, and drive measurable success for businesses.</span>
         <div class="d-flex justify-content-between gray">
           <div><i class="fa-regular fa-envelope"></i></div>
           <div><i class="fa-brands fa-linkedin"></i></div>
@@ -11,9 +12,17 @@
         </div>
       </div>
     </div>
-    <div class="col-4 d-flex flex-column g-3 align-items-center h-100 border border-1 border-warning"><!--SECOND COLUMN-->
+    <!--SECOND COLUMN-->
+    <div class="col-12 col-md-6 col-lg-4 d-flex g-3 align-items-center h-100 border border-1 border-warning">
+      <div class="card personal-card rounded-4 w-100" style="height: 240px;">
+        <!-- You can add content here if needed -->
+      </div>
     </div>
-    <div class="col-4 d-flex flex-column g-3 align-items-center h-100 border border-1 border-warning"><!--THIRD COLUMN-->
+    <!--THIRD COLUMN (Show on small screens, hidden on md screens)-->
+    <div class="col-12 col-lg-4 d-flex d-md-none d-lg-flex g-3 align-items-center h-100 border border-1 border-warning">
+      <div class="card personal-card rounded-4 w-100" style="height: 240px;">
+        <!-- You can add content here if needed -->
+      </div>
     </div>
   </div>
 </div>

@@ -90,3 +90,9 @@ a {
 .light-gray {
     color: $light-gray;
 }
+.font-1 {
+    font-size: clamp(2.75rem, 8vw, 12rem);
+}
+.font-4 {
+    font-size: clamp(1rem, 1.4vw, 1.25rem);
+}
