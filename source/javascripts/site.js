@@ -84,3 +84,21 @@ window.addEventListener('scroll', function() {
         }
     });    
 });
+
+function copyToClipboard() {
+    const email = "tairashingie@gmail.com";
+    const tooltip = document.querySelector('.custom-tooltip');
+
+    navigator.clipboard.writeText(email)
+        .then(() => {
+            console.log("Email copied to clipboard!");
+            tooltip.textContent = "Copied!";
+            
+            setTimeout(() => {
+                tooltip.textContent = "Copy E-mail";
+            }, 2000);
+        })
+        .catch(err => {
+            console.error("Error copying email: ", err);
+        });
+}

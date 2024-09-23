@@ -10,3 +10,72 @@
     background-color: rgba(59, 59, 59, 0.20);
     padding: 20px;
 }
+
+.icon-container {
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.static-icon {
+    opacity: 0.6;
+}
+
+.static-icon,
+.animated-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: all 1s ease;
+}
+
+.animated-icon {
+    opacity: 0;
+}
+
+.icon-container:hover .static-icon {
+    opacity: 0;
+}
+
+.icon-container:hover .animated-icon {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.custom-tooltip {
+    visibility: hidden;
+    font-size: 0.8rem;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.icon-container:hover .custom-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.custom-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
