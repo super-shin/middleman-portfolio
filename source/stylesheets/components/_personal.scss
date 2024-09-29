@@ -112,3 +112,70 @@
     width: 75%;
     height: 75%;
 }
+/* Container for the logo icon and tooltip */
+.logo-container {
+    position: relative; /* This allows the tooltip to be positioned correctly */
+}
+
+/* The logo-icon styles */
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    overflow: hidden; /* Needed for the shine effect */
+    position: relative;
+    transition: transform 1.5s ease;
+}
+
+.logo-tooltip {
+    visibility: hidden;
+    font-size: 0.6rem;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding-inline: 5px;
+    padding-block: 2px;
+    position: absolute;
+    z-index: 1;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.logo-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Show the tooltip when hovering the logo-icon */
+.logo-container:hover .logo-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Shine effect using ::before */
+.logo-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -70px;
+    height: 98px;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s linear;
+    transform: skewX(20deg) translateX(0);
+    z-index: 1;
+}
+
+.logo-icon:hover::before {
+    transform: skewX(20deg) translateX(300px);
+}
