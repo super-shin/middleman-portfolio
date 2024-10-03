@@ -102,3 +102,4 @@ function copyToClipboard() {
             console.error("Error copying email: ", err);
         });
 }
+

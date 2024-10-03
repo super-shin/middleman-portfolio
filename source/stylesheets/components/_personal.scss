@@ -112,12 +112,11 @@
     width: 75%;
     height: 75%;
 }
-/* Container for the logo icon and tooltip */
+
 .logo-container {
-    position: relative; /* This allows the tooltip to be positioned correctly */
+    position: relative;
 }
 
-/* The logo-icon styles */
 .logo-icon {
     width: 40px;
     height: 40px;
@@ -156,13 +155,11 @@
     transform: scale(1.1);
 }
 
-/* Show the tooltip when hovering the logo-icon */
 .logo-container:hover .logo-tooltip {
     visibility: visible;
     opacity: 1;
 }
 
-/* Shine effect using ::before */
 .logo-icon::before {
     content: '';
     position: absolute;
