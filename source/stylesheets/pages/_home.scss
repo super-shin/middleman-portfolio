@@ -3,9 +3,15 @@ body {
     color: white;
     user-select: none;
 }
+
 a {
     text-decoration: none;
 }
+
+a:hover {
+    color: $yellow !important;
+}
+
 .grain {
     position: fixed;
     top: 0;

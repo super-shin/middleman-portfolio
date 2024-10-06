@@ -166,7 +166,7 @@
     left: -70px;
     height: 98px;
     width: 50px;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.609);
     transition: all 0.3s linear;
     transform: skewX(20deg) translateX(0);
     z-index: 1;
@@ -183,7 +183,7 @@
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #6b6b6b;
+    background-color: #e1e1e1;
     width: 10px;
     height: 10px;
     border-radius: 50%;
