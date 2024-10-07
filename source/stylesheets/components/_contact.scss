@@ -1,0 +1,30 @@
+#contact{
+    height: 100vh;
+}
+
+.bg-gray {
+    background-color: rgba(128, 128, 128, 0.528);
+    position: relative;
+}
+
+.contact-title {
+    font-size: 6rem;
+}
+
+.booking-button {
+    height: 100px;
+    width: 300px;
+    background-color: rgba(85, 85, 85, 0.404);
+    transition: all 0.75s ease;
+}
+
+.booking-button:hover {
+    background-color: $gray;
+}
+
+.contact-bottom {
+    width: 100%;
+    border: solid 1px lime;
+    height: 150px;
+    margin-top: 80px;
+}
