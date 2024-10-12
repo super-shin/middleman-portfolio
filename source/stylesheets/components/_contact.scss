@@ -11,20 +11,102 @@
     font-size: 6rem;
 }
 
+.contact-bottom {
+    width: 100%;
+    height: 150px;
+    margin-top: 80px;
+}
+
 .booking-button {
-    height: 100px;
-    width: 300px;
-    background-color: rgba(85, 85, 85, 0.404);
-    transition: all 0.75s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 0 2px white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.booking-button svg {
+    position: absolute;
+    width: 24px;
+    fill: white;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.booking-button .arr-1 {
+    right: 16px;
+}
+
+.booking-button .arr-2 {
+    left: -25%;
+}
+
+.booking-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.booking-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .booking-button:hover {
-    background-color: $gray;
+    box-shadow: 0 0 0 12px transparent;
+    color: black;
+    border-radius: 12px;
 }
 
-.contact-bottom {
-    width: 100%;
-    border: solid 1px lime;
-    height: 150px;
-    margin-top: 80px;
+.booking-button:hover .arr-1 {
+    right: -25%;
+}
+
+.booking-button:hover .arr-2 {
+    left: 16px;
+}
+
+.booking-button:hover .text {
+    transform: translateX(12px);
+}
+
+.booking-button:hover svg {
+    fill: #212121;
+}
+
+.booking-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px white;
+}
+
+.booking-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+
+.booking-button-small {
+    transform: scale(0.65);
+    transform-origin: center center;
+    margin-left: 0;
 }
