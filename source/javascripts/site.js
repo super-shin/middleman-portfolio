@@ -61,6 +61,22 @@ document.addEventListener('DOMContentLoaded', function() {
             gif.src = img.src;
         });
     }); 
+
+    document.querySelector('.booking-button-small').addEventListener('click', function() {
+        console.log('button clicked');
+        const buttons = document.querySelectorAll('#google-button button');
+        buttons.forEach(button => {
+            button.click();
+        });
+    });
+
+    document.querySelector('.booking-button-medium').addEventListener('click', function() {
+        console.log('button clicked');
+        const buttons = document.querySelectorAll('#google-button button');
+        buttons.forEach(button => {
+            button.click();
+        });
+    });
 });
 
 
@@ -102,4 +118,3 @@ function copyToClipboard() {
             console.error("Error copying email: ", err);
         });
 }
-
