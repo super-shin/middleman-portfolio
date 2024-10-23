@@ -1,4 +1,8 @@
 @media (max-width: 576px) {
+    .container {
+        overflow: hidden !important;
+    }
+
     // navbar section
     .navbar {
         margin: 0 !important;
@@ -44,6 +48,37 @@
 
     .about-text, .about-left-sub-texts, .bentos {
         max-width: 100vw !important;
+    }
+
+    // projects section
+    .projects-main-text {
+        font-size: 4rem !important;
+    }
+
+    .fs-5 {
+        font-size: 0.6rem !important;
+    }
+
+    .mockup {
+        height: 100vw !important;
+    }
+
+    .scroll-section {
+        max-height: 60vh !important;
+        margin-bottom: 0 !important;
+    }
+
+    .projects-caption {
+        height: 80px !important;
+        flex-direction: column;
+    }
+
+    .projects-subtext {
+        align-self: flex-start !important;
+    }
+
+    .fs-6 {
+        font-size: 0.8rem !important;
     }
 
     // contact section
