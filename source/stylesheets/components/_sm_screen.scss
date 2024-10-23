@@ -19,7 +19,7 @@
     }
 
     .title-main {
-        font-size: 5rem !important;
+        font-size: 4.5rem !important;
     }
 
     .pic-bg {
@@ -46,8 +46,12 @@
         margin-top: 100px !important;
     }
 
-    .about-sub-text {
+    .about-sub-left, .about-sub-right {
         font-size: 0.7rem !important;
+    }
+
+    .about-sub-right {
+        margin-left: 10px !important;
     }
 
     .about-text, .about-left-sub-texts, .bentos {
@@ -68,8 +72,8 @@
     }
 
     .scroll-section {
-        max-height: 60vh !important;
-        margin-bottom: 0 !important;
+        max-height: 70vh !important;
+        margin-bottom: 10px !important;
     }
 
     .projects-caption {
@@ -99,5 +103,11 @@
 
     .contact-title {
         font-size: 4rem;
+    }
+
+    .contact-bottom {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        justify-content: center !important;
     }
 }
