@@ -1,6 +1,30 @@
 @media (max-width: 576px) {
+    // navbar section
     .navbar {
         margin: 0 !important;
-        margin-left: 40px !important;
+        margin-left: 30px !important;
+    }
+
+    // banner section
+    .banner {
+        min-height: 70vh !important;
+    }
+
+    .title-main {
+        font-size: 5rem !important;
+    }
+
+    .pic-bg {
+        height: 400px !important;
+        width: 400px !important;
+        margin-top: 150px !important;
+    }
+    
+    .availability {
+        margin-right: 4px;
+    }
+
+    .seeking-ft {
+        font-size: 0.8rem !important;
     }
 }
