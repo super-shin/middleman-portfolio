@@ -1,0 +1,82 @@
+@media (max-width: 1400px) {
+
+// banner section
+    .banner {
+        min-height: 100vw !important;
+    }
+
+    .title-main {
+        font-size: 16vw !important;
+    }
+
+    @keyframes add-margin {
+        0% {
+            margin-top: 0;
+        }
+        100% {
+            margin-top: 32vw;
+        }
+    }
+
+    .pic-bg {
+        animation: add-margin 2s forwards;
+    }
+
+// projects section
+    .projects-main-text {
+        font-size: 5rem !important;
+    }
+
+    .mockup {
+        min-height: 50vw !important;
+        height: auto !important;
+    }
+
+    .scroll-section {
+        min-height: 60vw !important;
+        height: auto !important;
+        margin-bottom: 20px !important;
+    }
+
+    .projects-caption {
+        min-height: 80px !important;
+        height: auto !important;
+        flex-direction: column;
+    }
+
+    .projects-subtext {
+        align-self: flex-start !important;
+    }
+
+// contact section
+    .contact-title {
+        font-size: 4rem;
+    }
+
+    .contact-bottom {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .md-hidden {
+        display: none !important;
+    }
+}
+
+@media (max-width: 800px) {
+    
+// banner section
+    .pic-bg {
+        max-height: 500px !important;
+        max-width: 500px !important;
+    }
+
+// personal section
+    #personal h1 {
+        font-size: 5rem !important;
+        margin-bottom: 0 !important;
+    }
+}
