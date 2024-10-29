@@ -1,4 +1,4 @@
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 577px) {
 
 // banner section
     .banner {
@@ -66,7 +66,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 577px) {
     
 // banner section
     .pic-bg {
@@ -78,5 +78,10 @@
     #personal h1 {
         font-size: 5rem !important;
         margin-bottom: 0 !important;
+    }
+
+    .mockup {
+        min-height: 90vw !important;
+        height: auto !important;
     }
 }

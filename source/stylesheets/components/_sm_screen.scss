@@ -60,7 +60,7 @@
 
 // projects section
     .projects-main-text {
-        font-size: 2rem !important;
+        font-size: 4rem !important;
     }
 
     .fs-5 {
@@ -68,13 +68,17 @@
     }
 
     .scroll-section {
-        max-height: 70vh !important;
+        max-height: 58vh !important;
         margin-bottom: 10px !important;
     }
 
     .projects-caption {
         height: 80px !important;
         flex-direction: column;
+    }
+
+    .mockup {
+        height: 80% !important;
     }
 
     .projects-subtext {
@@ -87,7 +91,7 @@
 
 // personal section
     #personal h1 {
-        font-size: 4rem !important;
+        font-size: 3.55rem !important;
         margin-bottom: 0 !important;
     }
 
